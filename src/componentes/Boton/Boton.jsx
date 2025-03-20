@@ -1,9 +1,10 @@
+import "./Boton.css"
 
 const Boton = () => {
 
 
   return (
-    <button> Apretame </button>
+    <button className="btn btn-primary"> Apretame </button>
   )
 }
 

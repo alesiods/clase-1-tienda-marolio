@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TituloPrincipal from './componentes/TituloPrincipal/TituloPrincipal'
 import ItemCount from './componentes/ItemCount/ItemCount'
 import NavBar from './componentes/NavBar/NavBar'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 
 const App = () => {
 
@@ -44,6 +45,7 @@ const App = () => {
       <ItemCount stock={10}/>
       <ItemCount stock={5}/> */}
       <NavBar/>
+      <ItemListContainer/>
     </>
     
     

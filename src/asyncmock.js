@@ -12,3 +12,12 @@ export const getProductos = () =>{
         },2000)
     })
 }
+
+export const getUnProducto = (id) => {
+    return new Promise(resolve => {
+        setInterval(()=>{
+            const producto = misProductos.find(item => item.id === id)
+            resolve(producto)
+        }, 2000)
+    })
+}

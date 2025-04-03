@@ -9,6 +9,7 @@ import TituloPrincipal from './componentes/TituloPrincipal/TituloPrincipal'
 import ItemCount from './componentes/ItemCount/ItemCount'
 import NavBar from './componentes/NavBar/NavBar'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
 
 const App = () => {
 
@@ -46,6 +47,7 @@ const App = () => {
       <ItemCount stock={5}/> */}
       <NavBar/>
       <ItemListContainer/>
+      <ItemDetailContainer/>
     </>
     
     

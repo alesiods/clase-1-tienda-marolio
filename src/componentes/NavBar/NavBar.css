@@ -1,12 +1,17 @@
 header {
     display: flex;
-    align-items:  center;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 15px solid #c1101a;
+}
+
+.logoMarolio {
+    width: 150px;
 }
 
 li {
     display: inline-block;
-    margin: 10px;
-    cursor: pointer;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
 }

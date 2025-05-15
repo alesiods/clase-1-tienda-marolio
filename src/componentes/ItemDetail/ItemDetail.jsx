@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom'
 import { CarritoContext } from '../../context/CarritoContext'
 //Importamos el Hook
 import { useContext } from 'react'
+import { toast } from 'react-toastify'
 
-const ItemDetail = ({id, nombre, precio, img, stock}) => {
+const ItemDetail = ({id, nombre, precio, img, stock, descripcion}) => {
 
     const [agregarCantidad, setAgregarCantidad] = useState(0)
 
@@ -22,6 +23,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
       //Ahora acá yo puedo crear un objeto con el item y la cantidad
       const item = {id,nombre,precio};
       agregarAlCarrito(item, cantidad)
+      toast.success("Su compra fue enviada al carrito",{autoClose: 1000, theme: "dark", position: "top-right"})
     }
 
 
@@ -32,7 +34,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
         <h3>Precio: {precio}</h3>
         <h3>ID: {id}</h3>
         <img src={img} alt={nombre} />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reprehenderit ducimus consequuntur magni id ratione quas quod nobis, ad, assumenda sequi corrupti, doloremque perferendis placeat quidem eum. Distinctio, harum at.</p>
+        <p>{descripcion}</p>
         {
           //Aca empleamos la lógica de montaje y desmontaje del contador
 

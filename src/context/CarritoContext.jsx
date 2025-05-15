@@ -16,8 +16,6 @@ export const CarritoProvider= ({children}) => {
     const [total, setTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal] = useState(0)
     
-    //Verificamos por consola (depsues lo borramos)
-    console.log(carrito)
 
 
     //4) Agregamos algunas funciones auxiliares para la logica del carrito
@@ -29,7 +27,7 @@ export const CarritoProvider= ({children}) => {
             setCarrito(prev => [...prev, {item, cantidad}]);
             setCantidadTotal(prev => prev + cantidad);
             setTotal(prev => prev + (item.precio * cantidad))
-            //La Sintasis: prev => [...prev,{item,cantidad}] se utiliza para crear un nuevo array a aprtir del estado anterior de carrito y agregamos un nuevo objeto que representa el producto agregado.
+            
         } else {
             const carritoActualizado = carrito.map ( prod => {
                 if(prod.item.id === item.id) {

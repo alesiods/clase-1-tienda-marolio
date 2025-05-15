@@ -16,3 +16,5 @@ Este es un proyecto de ecommerce básico que se utiliza para el curso de React. 
 - Realizar una orden compra con los datos del usuario.
 
 
+## Dominio: 
+https://tienda-marolio-75910.netlify.app/
